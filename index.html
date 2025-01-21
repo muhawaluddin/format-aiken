@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Soal ke Format Aiken | Walldev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Konversi Soal ke Format Aiken</h1>
+    <div class="container">
+        <div class="input-container">
+            <h2>Input Soal</h2>
+            <textarea id="inputText" rows="15" placeholder="Masukkan soal Anda di sini, satu soal per baris..."></textarea>
+            <div id="inputInfoText"></div>
+            <div class="button-container">
+                <button class="convert" onclick="convertToAiken()">Konversi ke Format Aiken</button>
+                <button class="reset" onclick="resetFields()">Reset</button>
+            </div>
+        </div>
+        <div class="output-container">
+            <h2>Output Format Aiken</h2>
+            <textarea id="outputText" rows="15" placeholder="Hasil konversi AIKEN FORMAT ..." readonly></textarea>
+            <div id="outputInfoText"></div>
+            <div class="button-container">
+                <button class="download" onclick="downloadOutput()">Download Output</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright by WallDev</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

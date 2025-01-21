@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1; /* Membuat container menyesuaikan sisa ruang yang tersedia */
+}
+
+.input-container, .output-container {
+    width: 45%;
+}
+
+textarea {
+    width: 100%;
+    font-family: monospace;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button.convert {
+    background-color: green;
+    color: white;
+}
+
+button.reset {
+    background-color: orange;
+    color: white;
+}
+
+button.download {
+    background-color: blue;
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+#inputInfoText, #outputInfoText {
+    text-align: right; /* Align ke kanan */
+    margin-top: 10px; /* Memberikan jarak atas */
+    font-weight: bold; /* Menebalkan teks */
+}
